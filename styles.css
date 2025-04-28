@@ -1,0 +1,61 @@
+/* Estilos personalizados */
+
+body {
+    background-color: #D1E9F1; 
+    color: #4A6B95;
+}
+
+
+.decoracion-img {
+    width: 100%;
+    max-width: 750px; /* ahora 3 veces más grande */
+    height: auto;
+}
+.logo-login {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+
+.card {
+    border-radius: 1rem;
+}
+
+.btn-primary {
+    background-color: #9CD442;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #547e10;
+}
+
+.btn-secondary {
+    background-color: #bde978;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #6b8d35;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+textarea {
+    resize: none; /* Para que el usuario no cambie el tamaño */
+}
+
+.sidebar {
+    background-color: #1B264F;
+}
+
+.gestion{
+    color: #1B264F;
+}
+
+.gestion tr th{
+    color: #1B264F;
+}

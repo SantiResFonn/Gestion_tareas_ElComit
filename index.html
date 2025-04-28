@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - El Comité</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row w-100">
+            <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center">
+                <img src="img/Evaluaciones-diagnosticas-300x300.png" alt="Imagen decorativa" class="decoracion-img">
+            </div>
+
+            <!-- Formulario -->
+            <div class="col-md-8 d-flex justify-content-center align-items-center">
+                <div class="card p-4 shadow-sm" style="width: 100%; max-width: 400px;">
+                    <div class="mb-4 text-center">
+                        <img src="img/LOGO-FONDO-SOCIAL.png" alt="Logo El Comité" class="logo-login">
+                    </div>
+                    <h2 class="text-center mb-4">Iniciar Sesión</h2>
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                        </div>
+
+                        <div class="d-flex justify-content-end mb-3">
+                            <a href="#" class="link-secondary small">¿Olvidaste tu contraseña?</a>
+                        </div>
+
+                        <div class="d-grid p-1">
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        </div>
+                        <div class="d-grid p-1">
+                            <a href="solicitud.html" class="btn btn-secondary">Realizar una solicitud</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="apps.js"></script>
+</body>
+</html>
