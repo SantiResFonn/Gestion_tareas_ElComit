@@ -425,5 +425,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const btnIniciar = document.getElementById("btnIniciarMantenimiento");
+    const btnTerminar = document.getElementById("btnTerminarMantenimiento");
+
+    // Guardar estado de mantenimiento en localStorage
+    btnIniciar?.addEventListener("click", () => {
+        localStorage.setItem("enMantenimiento", "true");
+        alert("⚠ Mantenimiento iniciado. El mensaje se mostrará en el inicio.");
+    });
+
+    btnTerminar?.addEventListener("click", () => {
+        localStorage.removeItem("enMantenimiento");
+        alert("✅ Mantenimiento finalizado.");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.getElementById("bannerMantenimiento");
+    const enMantenimiento = localStorage.getItem("enMantenimiento");
+
+    if (banner && enMantenimiento === "true") {
+        banner.style.display = "block";
+        banner.style.position = "fixed";
+        banner.style.top = "0";
+        banner.style.left = "0";
+        banner.style.width = "100%";
+        banner.style.zIndex = "9999";
+    }
+});
+
+
 
 
